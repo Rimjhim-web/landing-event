@@ -1,16 +1,15 @@
-/* General Styles */
 body {
     font-family: 'Helvetica', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(127, 224, 244);
+    background-color: hsl(203, 83%, 66%);
     color: #333;
     line-height: 1.6;
- 
 }
 
 header.main-header {
-    background-color: #333;
+    background-color:  #333333 ;
+     color: #fff;
     padding: 20px;
     text-align: center;
 }
@@ -41,14 +40,13 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Banner Styles (Home Page) */
 .banner {
-    background-image:url(ima.jpg) ;
+    background-image: url(ima.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
-    color: #bc3b08;
-    padding: 150px 20px;
+    color: hsl(244, 69%, 53%);
+    padding: 170px 10px;
 }
 
 .banner h1 {
@@ -68,45 +66,25 @@ nav ul li a:hover {
     background-color: hsl(11, 23%, 9%);
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
 .cta-button:hover {
-    background-color: rgb(63, 213, 224);
+    background-color: #3b9298;
 }
 
-/* General styles for the schedule page */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    color: #333;
+/* Common Styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.main-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+.text-center {
     text-align: center;
 }
 
-.main-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.main-header nav ul li {
-    display: inline;
-    margin-right: 15px;
-}
-
-.main-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
+/* Schedule Grid */
 .schedule-grid-container {
     padding: 20px;
     max-width: 1200px;
@@ -137,7 +115,7 @@ body {
     border-radius: 8px;
     padding: 20px;
     width: 300px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
@@ -148,13 +126,35 @@ body {
     font-size: 1em;
     color: #666;
 }
-/* Artists Page */
+/* Centering the button inside the schedule-banner */
+.schedule-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust the height as needed */
+    background-image: -none #333; /* Optional: Background color for the banner */
+}
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Artists Grid */
 .artists-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 30px;
     justify-content: center;
-    text-align: center; /* Center-align text within each artist card */
+    text-align: center; 
 }
 
 .artist {
@@ -170,20 +170,20 @@ body {
     width: 100%;
     height: 300px;
     border-radius: 50%;
-    margin-bottom: 15px; /* Add margin below image */
+    margin-bottom: 15px; 
 }
 
 .artist h3 {
-    margin: 15px 0; /* Add some margin around artist name */
-    font-size: 1.5em; /* Increase the font size for better visibility */
-    color: hsl(0, 0%, 20%); /* Adjust color if needed */
+    margin: 15px 0; 
+    font-size: 1.5em; 
+    color: 0D7C66; 
 }
 
 .artist a {
-    display: block; /* Make the link a block element */
-    margin-bottom: 10px; /* Add some space below the link */
+    display: block; 
+    margin-bottom: 10px; 
     font-size: 1.1em;
-    color: #007BFF; /* Change link color if needed */
+    color: #007BFF; 
     text-decoration: none;
 }
 
@@ -192,11 +192,11 @@ body {
 }
 
 .artist p {
-    font-size: 1.1em; /* Increase font size for better readability */
-    color: #666; /* Adjust color for contrast */
+    font-size: 1.1em;
+    color: #666; 
 }
 
-/* Venue Page Styles */
+/* Venue Info */
 .venue-info {
     max-width: 800px; 
     margin: 0 auto; 
@@ -254,7 +254,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* Location Map Styles */
 .location-map {
     margin-top: 40px;
     text-align: center;
@@ -265,15 +264,15 @@ body {
     border-radius: 8px;
 }
 
-/* Contact Page Styles */
+/* Contact Section */
 #contact {
-    background-color: hsl(180, 8%, 97%);
+    background-color: rgb(107, 173, 248);
     padding: 40px 20px;
     text-align: center;
 }
 
 .contact-form-container {
-    background: hsl(180, 93%, 67%);
+    background: hsl(212, 68%, 61%);
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -306,7 +305,7 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid hsl(193, 50%, 59%);
+    border: 1px solid hwb(134 37% 11%);
     border-radius: 4px;
 }
 
@@ -330,9 +329,19 @@ body {
     background-color: #555;
 }
 
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        padding: 10px;
+    }
+    .card, .artist {
+        width: 45%;
+    }
+}
+
 @media (max-width: 768px) {
     .banner {
-        padding: 100px 5px;
+        padding: 80px 10px;
     }
 
     .banner h1 {
@@ -343,17 +352,50 @@ body {
         font-size: 18px;
     }
 
-    .schedule-grid, .artists-grid {
+    nav ul {
         flex-direction: column;
-        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
     }
 
     .card, .artist {
         width: 90%;
     }
 
-    .venue-info, .venue-map {
-        width: 90%;
+    .venue-info {
         padding: 10px;
+        text-align: left;
+    }
+
+    .contact-form-container {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 28px;
+    }
+
+    .banner p {
+        font-size: 16px;
+    }
+
+    .card, .artist {
+        width: 100%;
+    }
+
+    .venue-info h2 {
+        font-size: 28px;
+    }
+
+    .venue-info p {
+        font-size: 18px;
+    }
+
+    .venue-details h3 {
+        font-size: 24px;
     }
 }
